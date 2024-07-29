@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemant-Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 2, 42);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(48, 48, 88);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: cyan;
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .left-section {
+
+            font-size: 3rem;
+
+        }
+
+        .right-section {
+            width: 80%;
+
+        }
+
+        .right-section img {
+            width: 80%;
+            height: 100%;
+            image-rendering: optimizeQuality;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            background-color: white;
+            margin: 40px 84px;
+
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+        .text-gray {
+            color: grey;
+        }
+        .secondsection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+        .secondsection .vertical{
+            height:2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Hemant's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li></a>
+                    <li><a href="/">About</a></li></a>
+                    <li><a href="/">Services</a></li></a>
+                    <li><a href="/">Projects</a></li></a>
+                    <li><a href="/">Contact me</a></li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="left-section">Hi,my name is 
+                <span class="purple">Hemant</span>
+                <div>and I am a passsionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="right-section">
+                <img src="bgg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                
+            </div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
